@@ -1,0 +1,125 @@
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --SoftPink: hsl(333, 80%, 67%);
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+    background-image: url(bg-pattern-top-desktop.svg), url(bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:top left, bottom right;
+    background-size: 29%, 80%;
+    background-color: white;
+    height: 655px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 2em 6em
+}
+
+.container_top{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.top_left{
+    text-align:start;
+    padding-right:16em;
+    
+}
+
+.top_left--title {
+    font-size: 48px;
+    color: var(--VeryDarkMagenta);
+}
+
+.top_left--text {
+    font-size: 16px;
+    color: var(--DarkGrayishMagenta);
+    line-height: 1.3em;
+}
+
+
+.top_right--rating {
+    background-color: var(--LightGrayishMagenta);
+    margin: 1em auto;
+    width: 70%;
+    padding: 0.2em 1em 0em 1em;
+}
+
+
+
+.top_right--rating p{
+    color:var(--VeryDarkMagenta);
+    font-weight:bold;
+    display:inline-block;
+    margin-left:1em;
+}
+
+.rating_left {
+    margin-left: 1em;
+    margin-top:2em;
+}
+
+.rating_right{
+    margin-right:1em
+}
+.container_bottom{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding-top:3em;
+}
+
+    .container_bottom div {
+        background-color:var(--VeryDarkMagenta);
+        padding:2em;
+        border-radius:12px;
+        height:175px;
+        width:70%;
+    }
+
+
+    .container_bottom h2 {
+        font-size: 16px;
+        margin: 0.1em auto;
+    }
+
+    .container_bottom p{
+        color:white;
+        font-size:17px;       
+        line-height:1.5em;
+        font-weight:300;
+    }
+
+.bottom_image{
+    border-radius:90px;
+    width:13%;
+}
+
+.bottom_name{
+    color:white;
+}
+
+.bottom_buyer{
+    color:var(--SoftPink);
+    font-weight:500;
+    display:inline-block;
+}
+
+.bottom_left {
+    margin: 0 2em 4em 0em;
+}
+
+.bottom_center{
+    margin:1em 1em 2em;
+}
+
+.bottom_right {
+    margin: 2em 1em 0 1em;
+}
